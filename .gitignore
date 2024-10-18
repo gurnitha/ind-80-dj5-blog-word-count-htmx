@@ -1,3 +1,9 @@
+# -----------new-----------
+venv312511
+_docs
+steps.txt
+# -----------new-----------
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
