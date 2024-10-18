@@ -84,3 +84,17 @@ Membuat aplikasi blog menggunakan Django versi 5.x dan HTMX
 
 
 ## 4. DATABASE
+
+#### 1. Membuat postgres database
+
+        E:\_WORKSPACE\laragon\www
+        λ psql -U postgres
+        psql (16.2)
+        WARNING: Console code page (437) differs from Windows code page (1252)
+                 8-bit characters might not work correctly. See psql reference
+                 page "Notes for Windows users" for details.
+        Type "help" for help.
+
+        postgres=# CREATE DATABASE ind_80_dj5_blog_word_count_htmx;
+        CREATE DATABASE
+        postgres=#
