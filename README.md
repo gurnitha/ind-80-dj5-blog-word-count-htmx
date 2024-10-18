@@ -35,3 +35,5 @@ Membuat aplikasi blog menggunakan Django versi 5.x dan HTMX
         renamed:    config/config/urls.py -> config/urls.py
         renamed:    config/config/wsgi.py -> config/wsgi.py
         renamed:    config/manage.py -> manage.py
+
+#### 3. Menjalankan server Django
