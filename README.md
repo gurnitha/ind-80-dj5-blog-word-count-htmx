@@ -37,3 +37,10 @@ Membuat aplikasi blog menggunakan Django versi 5.x dan HTMX
         renamed:    config/manage.py -> manage.py
 
 #### 3. Menjalankan server Django
+
+#### 4. Mejalankan migrasi untuk mengakses admin panel
+
+#### 5. Membuat superuser
+
+
+## 3. SETTINGS
