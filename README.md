@@ -49,3 +49,18 @@ Membuat aplikasi blog menggunakan Django versi 5.x dan HTMX
 
         modified:   README.md
         modified:   config/settings.py
+
+#### 2. Menseting absolute path untuk templates
+
+        modified:   README.md
+        modified:   config/settings.py
+
+        # testing
+        (venv312511) λ python manage.py check
+
+        # results
+        C:\Users\ING\Desktop\workspace\80-ind-dj5-jadual-vaksin\src\config\settings.py
+        C:\Users\ING\Desktop\workspace\80-ind-dj5-jadual-vaksin\src\config
+        C:\Users\ING\Desktop\workspace\80-ind-dj5-jadual-vaksin\src
+
+        System check identified no issues (0 silenced).
