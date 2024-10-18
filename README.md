@@ -25,3 +25,13 @@ Membuat aplikasi blog menggunakan Django versi 5.x dan HTMX
         new file:   config/config/urls.py
         new file:   config/config/wsgi.py
         new file:   config/manage.py
+
+#### 2. Membuat root direktori 'src'
+
+        modified:   README.md
+        renamed:    config/config/__init__.py -> config/__init__.py
+        renamed:    config/config/asgi.py -> config/asgi.py
+        renamed:    config/config/settings.py -> config/settings.py
+        renamed:    config/config/urls.py -> config/urls.py
+        renamed:    config/config/wsgi.py -> config/wsgi.py
+        renamed:    config/manage.py -> manage.py
