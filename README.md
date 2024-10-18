@@ -72,3 +72,12 @@ Membuat aplikasi blog menggunakan Django versi 5.x dan HTMX
 
         (venv312511) λ python manage.py check
         System check identified no issues (0 silenced).
+
+#### 4. Menseting absolute path untuk file media
+
+        modified:   README.md
+        modified:   config/settings.py
+        modified:   config/urls.py
+
+        (venv312511) λ python manage.py check
+        System check identified no issues (0 silenced).
