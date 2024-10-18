@@ -98,3 +98,24 @@ Membuat aplikasi blog menggunakan Django versi 5.x dan HTMX
         postgres=# CREATE DATABASE ind_80_dj5_blog_word_count_htmx;
         CREATE DATABASE
         postgres=#
+
+#### 2. Menseting path untuk menghubungan proyek ke database
+
+        # DB: PostgreSQL
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.postgresql_psycopg2',
+                'NAME': 'ind_80_dj5_blog_word_count_htmx', 
+                'USER': 'postgres', 
+                'PASSWORD': 'postgres',
+                'HOST': 'localhost', 
+                'PORT': '5433',
+            }
+        }
+
+          File "C:\Users\ING\Desktop\workspace\ind-80-dj5-blog-word-count-htmx\venv312511\Lib\site-packages\django\db\backends\postgresql\base.py", line 29, in <module>
+            raise ImproperlyConfigured("Error loading psycopg2 or psycopg module")
+        django.core.exceptions.ImproperlyConfigured: Error loading psycopg2 or psycopg module
+
+        modified:   README.md
+        modified:   config/settings.py

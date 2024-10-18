@@ -140,4 +140,16 @@ STATIC_URL = 'static/'
 MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
+
+# DB: PostgreSQL
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'ind_80_dj5_blog_word_count_htmx', 
+        'USER': 'postgres', 
+        'PASSWORD': 'postgres',
+        'HOST': 'localhost', 
+        'PORT': '5433',
+    }
+}
 # ----------------- Added new scripts ends -----------------
