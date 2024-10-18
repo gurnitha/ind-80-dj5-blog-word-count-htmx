@@ -179,3 +179,6 @@ Membuat aplikasi blog menggunakan Django versi 5.x dan HTMX
 
 
 ## 5. PROYEK DJANGO VS APLIKASI DJANGO
+
+
+## 6. APLIKASI DJANGO
