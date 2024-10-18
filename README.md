@@ -64,3 +64,11 @@ Membuat aplikasi blog menggunakan Django versi 5.x dan HTMX
         C:\Users\ING\Desktop\workspace\80-ind-dj5-jadual-vaksin\src
 
         System check identified no issues (0 silenced).
+
+#### 3. Menseting absolute path untuk file statis
+
+        modified:   README.md
+        modified:   config/settings.py
+
+        (venv312511) λ python manage.py check
+        System check identified no issues (0 silenced).
