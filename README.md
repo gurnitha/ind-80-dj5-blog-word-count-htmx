@@ -44,3 +44,8 @@ Membuat aplikasi blog menggunakan Django versi 5.x dan HTMX
 
 
 ## 3. SETTINGS
+
+#### 1. Menseting bahasa dan waktu
+
+        modified:   README.md
+        modified:   config/settings.py
