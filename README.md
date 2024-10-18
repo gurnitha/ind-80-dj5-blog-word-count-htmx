@@ -81,3 +81,6 @@ Membuat aplikasi blog menggunakan Django versi 5.x dan HTMX
 
         (venv312511) λ python manage.py check
         System check identified no issues (0 silenced).
+
+
+## 4. DATABASE
