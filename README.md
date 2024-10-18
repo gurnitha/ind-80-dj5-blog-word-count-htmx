@@ -176,3 +176,6 @@ Membuat aplikasi blog menggunakan Django versi 5.x dan HTMX
         new file:   .env.example
         modified:   README.md
         modified:   config/settings.py
+
+
+## 5. PROYEK DJANGO VS APLIKASI DJANGO
