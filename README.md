@@ -119,3 +119,16 @@ Membuat aplikasi blog menggunakan Django versi 5.x dan HTMX
 
         modified:   README.md
         modified:   config/settings.py
+
+#### 3. Menginstal psycopg2-binary
+
+        (venv312511) λ python -m pip install psycopg2-binary
+        Collecting psycopg2-binary
+          Downloading psycopg2_binary-2.9.10-cp312-cp312-win_amd64.whl.metadata (5.0 kB)
+        Downloading psycopg2_binary-2.9.10-cp312-cp312-win_amd64.whl (1.2 MB)
+           ---------------------------------------- 1.2/1.2 MB 7.2 MB/s eta 0:00:00
+        Installing collected packages: psycopg2-binary
+        Successfully installed psycopg2-binary-2.9.10
+
+        C:\Users\ING\Desktop\workspace\ind-80-dj5-blog-word-count-htmx\src(main -> origin)(venv312511) λ python manage.py check
+        System check identified no issues (0 silenced).
