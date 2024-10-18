@@ -132,3 +132,47 @@ Membuat aplikasi blog menggunakan Django versi 5.x dan HTMX
 
         C:\Users\ING\Desktop\workspace\ind-80-dj5-blog-word-count-htmx\src(main -> origin)(venv312511) λ python manage.py check
         System check identified no issues (0 silenced).
+
+#### 4. Melindungi file penting
+
+        BASE_DIR = Path(__file__).resolve().parent.parent
+
+        # Start langkah 1: Melindungi file penting
+        import environ
+        env = environ.Env()
+        environ.Env.read_env()
+        environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
+        # End langkah 1: Melindungi file penting
+
+        # SECRET_KEY = 'django-insecure-@0l9(24a_h=-2-+&6n3dgs%*&)nk05(327n9&009gy$0m4un35'
+
+        # Start langkah 2: Melindungi file penting
+        SECRET_KEY = env('SECRET_KEY')
+        # End langkah 2: Melindungi file penting
+
+        # Start langkah 3: Melindungi file penting
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.postgresql_psycopg2',
+                'NAME': env('DB_NAME'),
+                'USER': env('DB_USER'),
+                'PASSWORD': env('DB_PASSWORD'),
+                'PASSWORD': env('DB_HOST'),
+                'PASSWORD': env('DB_PORT'),
+            }
+        }
+        # End langkah 3: Melindungi file penting
+
+        (venv312511) λ pip install django-environ
+        Collecting django-environ
+          Using cached django_environ-0.11.2-py2.py3-none-any.whl.metadata (11 kB)
+        Using cached django_environ-0.11.2-py2.py3-none-any.whl (19 kB)
+        Installing collected packages: django-environ
+        Successfully installed django-environ-0.11.2
+
+        System check identified no issues (0 silenced).
+
+        new file:   .env
+        new file:   .env.example
+        modified:   README.md
+        modified:   config/settings.py

@@ -16,12 +16,23 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# Start langkah 1: Melindungi file penting
+import environ
+env = environ.Env()
+environ.Env.read_env()
+environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
+# End langkah 1: Melindungi file penting
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-&45q)%$#_^izs%69ofo$1t30ui$9z)oa0=8@cs5s@psns)uvfr'
+# SECRET_KEY = 'django-insecure-&45q)%$#_^izs%69ofo$1t30ui$9z)oa0=8@cs5s@psns)uvfr'
+
+# Start langkah 2: Melindungi file penting
+SECRET_KEY = env('SECRET_KEY')
+# End langkah 2: Melindungi file penting
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -77,12 +88,12 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 
 # Password validation
@@ -141,15 +152,28 @@ MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
 
-# DB: PostgreSQL
+# # DB: PostgreSQL
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'ind_80_dj5_blog_word_count_htmx', 
+#         'USER': 'postgres', 
+#         'PASSWORD': 'postgres',
+#         'HOST': 'localhost', 
+#         'PORT': '5433',
+#     }
+# }
+
+# Start langkah 3: Melindungi file penting
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ind_80_dj5_blog_word_count_htmx', 
-        'USER': 'postgres', 
-        'PASSWORD': 'postgres',
-        'HOST': 'localhost', 
-        'PORT': '5433',
+        'NAME': env('DB_NAME'),
+        'USER': env('DB_USER'),
+        'PASSWORD': env('DB_PASSWORD'),
+        'PASSWORD': env('DB_HOST'),
+        'PASSWORD': env('DB_PORT'),
     }
 }
+# End langkah 3: Melindungi file penting
 # ----------------- Added new scripts ends -----------------
