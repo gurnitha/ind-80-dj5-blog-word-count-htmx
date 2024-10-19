@@ -211,3 +211,12 @@ Membuat aplikasi blog menggunakan Django versi 5.x dan HTMX
 
 
 ## 7. URLs, VIEWS, TEMPLATES
+
+#### 1. Membuat laman home
+
+        modified:   README.md
+        new file:   app/main/urls.py
+        modified:   app/main/views.py
+        modified:   config/settings.py
+        modified:   config/urls.py
+        new file:   templates/main/index.html

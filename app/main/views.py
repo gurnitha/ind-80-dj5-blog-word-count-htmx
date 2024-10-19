@@ -1,13 +1,10 @@
 # app/main/views.py
 
 # Django modules
-from django.http import HttpResponse
-import datetime
+from django.shortcuts import render
 
-# Create your views here.
+def home_view(request):
+    return render(request, 'main/index.html')
 
-def halodunia(request):
-    now = datetime.datetime.now()
-    html = "Halo Dunia! Waktu Jakarta sekarang adalah %s." % now
-    return HttpResponse(html)
+
 
