@@ -10,10 +10,7 @@
 </head>
 <body>
     <!-- header -->
-    <nav>
-        <a href="{% url 'main:home' %}">Home</a>
-        <a href="{% url 'main:about' %}">About</a>
-    </nav>
+    {% include 'inc/header.html' %}
     <!-- header ends-->
 
     <!-- content -->
@@ -22,7 +19,7 @@
     <!-- content ends -->
 
     <!-- footer -->
-    <p>Footer</p>
+    {% include 'inc/footer.html' %}
     <!-- footer -->
 </body>
 </html>
