@@ -234,3 +234,8 @@ Membuat aplikasi blog menggunakan Django versi 5.x dan HTMX
         modified:   README.md
         modified:   templates/main/about.html
         modified:   templates/main/index.html
+
+#### 4. Menggunakan tempate tags Django untuk mentautkan laman situs web
+
+        modified:   templates/main/about.html
+        modified:   templates/main/index.html
