@@ -254,3 +254,9 @@ Membuat aplikasi blog menggunakan Django versi 5.x dan HTMX
         modified:   templates/base.html
         modified:   templates/main/about.html
         modified:   templates/main/index.html
+
+#### 7. Loading file statis css
+
+        modified:   README.md
+        new file:   static/css/testing.css
+        modified:   templates/main/base.html
