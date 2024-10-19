@@ -193,3 +193,12 @@ Membuat aplikasi blog menggunakan Django versi 5.x dan HTMX
         new file:   app/main/models.py
         new file:   app/main/tests.py
         new file:   app/main/views.py
+
+#### 2. Mengintegrasikan aplikasi main dengan proyek
+
+        modified:   README.md
+        modified:   app/main/apps.py
+        modified:   config/settings.py
+
+        (venv312511) λ python manage.py check
+        System check identified no issues (0 silenced).
