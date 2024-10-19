@@ -1,0 +1,26 @@
+<!-- templates/main/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog Word Count 80 | Home</title>
+</head>
+<body>
+    <!-- header -->
+    <nav>
+        <a href="{% url 'main:home' %}">Home</a>
+        <a href="{% url 'main:about' %}">About</a>
+    </nav>
+    <!-- header ends-->
+
+    <!-- content -->
+    {% block content %}
+    {% endblock content %}
+    <!-- content ends -->
+
+    <!-- footer -->
+    <p>Footer</p>
+    <!-- footer -->
+</body>
+</html>

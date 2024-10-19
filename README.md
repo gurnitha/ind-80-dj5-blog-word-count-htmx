@@ -239,3 +239,10 @@ Membuat aplikasi blog menggunakan Django versi 5.x dan HTMX
 
         modified:   templates/main/about.html
         modified:   templates/main/index.html
+
+#### 5. Template inheritance
+
+        modified:   README.md
+        new file:   templates/base.html
+        modified:   templates/main/about.html
+        modified:   templates/main/index.html
