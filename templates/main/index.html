@@ -1,5 +1,6 @@
 <!-- templates/main/index.html -->
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %} {{ title }} {% endblock title %}
 
@@ -9,6 +10,7 @@
     <p>Share postingan Anda di sini.</p>
 
     <h3>Title: {{ title }}</h3>
+    <img src="{% static 'images/01.png' %}" width="50%">
 
 {% endblock content %}
 
