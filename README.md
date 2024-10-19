@@ -208,3 +208,6 @@ Membuat aplikasi blog menggunakan Django versi 5.x dan HTMX
         modified:   README.md
         modified:   app/main/views.py
         modified:   config/urls.py
+
+
+## 7. URLs, VIEWS, TEMPLATES
