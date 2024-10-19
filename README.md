@@ -228,3 +228,9 @@ Membuat aplikasi blog menggunakan Django versi 5.x dan HTMX
         modified:   app/main/views.py
         modified:   config/urls.py
         new file:   templates/main/about.html
+
+#### 3. Mentautkan laman home dan laman about
+
+        modified:   README.md
+        modified:   templates/main/about.html
+        modified:   templates/main/index.html
