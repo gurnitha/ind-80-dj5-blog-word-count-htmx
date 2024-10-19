@@ -246,3 +246,11 @@ Membuat aplikasi blog menggunakan Django versi 5.x dan HTMX
         new file:   templates/base.html
         modified:   templates/main/about.html
         modified:   templates/main/index.html
+
+#### 6. Block Super untuk page title
+
+        modified:   README.md
+        modified:   app/main/views.py
+        modified:   templates/base.html
+        modified:   templates/main/about.html
+        modified:   templates/main/index.html
