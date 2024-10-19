@@ -11,6 +11,9 @@ app_name = 'main'
 
 # Urlspatterns
 urlpatterns = [
-    path('', views.home_view, name='home'),
+    # http://127.0.0.1:8000/blog/
+    path('blog/', views.home_view, name='home'),
+    # http://127.0.0.1:8000/blog/about/
+    path('blog/about/', views.about_view, name='about'),
 ]
 

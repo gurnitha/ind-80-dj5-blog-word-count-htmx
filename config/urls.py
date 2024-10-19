@@ -9,6 +9,7 @@ from django.urls import path, include
 
 urlpatterns = [
     # main
+    # http://127.0.0.1:8000/
     path('', include('app.main.urls', namespace='main')), # baru
     # admin
     path('admin/', admin.site.urls),
